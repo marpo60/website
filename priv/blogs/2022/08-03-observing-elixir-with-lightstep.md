@@ -167,7 +167,7 @@ readonly OTEL_RESOURCE_ATTRIBUTES=`echo $attributes | sed 's/[[:space:]]//g'`
 
 OTEL_RESOURCE_ATTRIBUTES=${OTEL_RESOURCE_ATTRIBUTES} \
     PHX_SERVER=true \
-    exec ./bitfo start
+    exec ./my_app start
 ```
 
 3. Last but not least, we must configure `opentelemetry` to process our spans
